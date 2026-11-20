@@ -1,0 +1,17 @@
+# Raw dataset files (.mat) and large data folders
+*.mat
+data/
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db

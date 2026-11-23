@@ -48,7 +48,7 @@ Each Nested 5×5 CV run automatically generates and saves 300 DPI evaluation fig
 - **Classification Report Heatmap:** Per-class precision, recall, F1-score, macro avg, and weighted avg.
 - **t-SNE Projection:** 2D latent feature clusters extracted from the lowest-validation-loss checkpoint evaluated on its unseen 26-flight outer test fold.
 - **benchmarking against existing research paper:** Refer to the uploaded "benchmark comparisons.png"
-- **research paper link:** (https://ieeexplore.ieee.org/document/11576037)
+- **research paper link:** https://ieeexplore.ieee.org/document/11576037
 
 ## Dataset Setup
 

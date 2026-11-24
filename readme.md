@@ -47,7 +47,7 @@ Each Nested 5×5 CV run automatically generates and saves 300 DPI evaluation fig
 - **Confusion Matrix:** Aggregated out-of-fold predictions across all 130 unseen flights (9,992 windows).
 - **Classification Report Heatmap:** Per-class precision, recall, F1-score, macro avg, and weighted avg.
 - **t-SNE Projection:** 2D latent feature clusters extracted from the lowest-validation-loss checkpoint evaluated on its unseen 26-flight outer test fold.
-- **benchmarking against existing research paper:** Refer to the uploaded "benchmark comparisons.png"
+- **Benchmarking against existing research paper:** Refer to the uploaded "benchmark comparisons.png"
 - **Research paper link:** https://ieeexplore.ieee.org/document/11576037
 
 - **Published Univariate Benchmarks vs. Strict Nested CV:** Martinez-Ríos et al. reported $63.01\%$ (WST-SVM) and $68.20\%$ / $69.75\%$ / $68.10\%$ (2-layer causal 1D-CNN Models 1–3) accuracy on single-axis z-axis acceleration under window-level splits. Under strict flight-level Nested $5 \times 5$ CV (zero shared flights across train and test), single-channel 1D-CNN Models 1–3 average $62.74\% \pm 5.46\%$, $64.90\% \pm 5.84\%$, and $63.85\% \pm 5.31\%$ single-model accuracy ($65.51\% \pm 6.10\%$, $67.85\% \pm 6.03\%$, and $66.89\% \pm 6.25\%$ with 5-model ensembling).  
@@ -61,7 +61,7 @@ Each Nested 5×5 CV run automatically generates and saves 300 DPI evaluation fig
 - **Balanced Precision and Recall:** Almost equal macro avg precision (0.8306) and recall (0.8315) on the 13-channel Dual TF-CNN indicate consistent fault discrimination across classes without heavy false-positive or false-negative skew on unseen flight recordings.  
 
 - **Class Separability Across Health States:** High F1-scores on F0 (Healthy) (0.8932) and F1 (Edge Cut) (0.8828) confirm clear separability for healthy flight and blade-edge defects, whereas lower F1-scores on F2 (Crack) (0.7935) and F3 (Surface Cut) (0.7540) highlight overlap between subtle structural damage signatures. 
-  
+
 - **Unweighted Four-Class Benchmark:** Because DronePropA has more healthy recordings (40 flights, 3,063 windows) than each fault class (30 flights each, 2,302–2,318 windows), macro avg metrics confirm that gains hold across all four classes rather than being driven solely by healthy windows.   
 
 ## Dataset Setup

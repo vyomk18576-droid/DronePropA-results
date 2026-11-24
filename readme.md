@@ -49,7 +49,7 @@ Each Nested 5×5 CV run automatically generates and saves 300 DPI evaluation fig
 - **t-SNE Projection:** 2D latent feature clusters extracted from the lowest-validation-loss checkpoint evaluated on its unseen 26-flight outer test fold.
 - **benchmarking against existing research paper:** Refer to the uploaded "benchmark comparisons.png"
 - **research paper link:** https://ieeexplore.ieee.org/document/11576037
-**Published Univariate Benchmarks vs. Strict Nested CV: Martinez-Ríos et al. reported $63.01\%$ (WST-SVM) and $68.20\%$ / $69.75\%$ / $68.10\%$ (2-layer causal 1D-CNN Models 1–3) on single-axis z-axis acceleration under window-level splits. Under strict flight-level Nested $5 \times 5$ CV (zero shared flights across train and test), single-channel 1D-CNN Models 1–3 average $62.74\% \pm 5.46\%$, $64.90\% \pm 5.84\%$, and $63.85\% \pm 5.31\%$ single-model accuracy ($65.51\% \pm 6.10\%$, $67.85\% \pm 6.03\%$, and $66.89\% \pm 6.25\%$ with 5-model ensembling).**   
+- **Published Univariate Benchmarks vs. Strict Nested CV: Martinez-Ríos et al. reported $63.01\%$ (WST-SVM) and $68.20\%$ / $69.75\%$ / $68.10\%$ (2-layer causal 1D-CNN Models 1–3) on single-axis z-axis acceleration under window-level splits. Under strict flight-level Nested $5 \times 5$ CV (zero shared flights across train and test), single-channel 1D-CNN Models 1–3 average $62.74\% \pm 5.46\%$, $64.90\% \pm 5.84\%$, and $63.85\% \pm 5.31\%$ single-model accuracy ($65.51\% \pm 6.10\%$, $67.85\% \pm 6.03\%$, and $66.89\% \pm 6.25\%$ with 5-model ensembling).**   
 
 ## Dataset Setup
 
